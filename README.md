@@ -23,6 +23,20 @@ A simple, user-friendly **Contact Management System** built with **Spring Boot**
 
 ---
 
+## 📋 API Endpoints
+
+### Contact Endpoints
+| HTTP Method | Endpoint               | Description                                   |
+|-------------|------------------------|-----------------------------------------------|
+| `GET`       | `/contacts`            | Retrieves a list of all contacts.             |
+| `GET`       | `/contacts/add`        | Displays the form to add a new contact.       |
+| `POST`      | `/contacts`            | Submits data to create a new contact.         |
+| `GET`       | `/contacts/edit/{id}`  | Displays the form to edit an existing contact.|
+| `PUT`       | `/contacts/{id}`       | Updates the contact details for a given ID.   |
+| `GET`       | `/contacts/delete/{id}`| Deletes a contact by its ID.                  |
+
+---
+
 ## ⚙️ Steps to Run the Project
 
 ### Prerequisites
