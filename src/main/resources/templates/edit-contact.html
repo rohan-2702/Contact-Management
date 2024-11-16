@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Edit Contact</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css" rel="stylesheet">
+</head>
+<body>
+<div class="container mt-5">
+    <h2 class="text-center">Edit Contact</h2>
+    <form th:action="@{/contacts/{id}(id=${contact.id})}" method="POST">
+        <input type="hidden" name="_method" value="PUT">
+        <div class="mb-3">
+            <label for="firstName" class="form-label">First Name</label>
+            <input type="text" class="form-control" id="firstName" name="firstName" th:value="${contact.firstName}" required>
+        </div>
+        <div class="mb-3">
+            <label for="lastName" class="form-label">Last Name</label>
+            <input type="text" class="form-control" id="lastName" name="lastName" th:value="${contact.lastName}" required>
+        </div>
+        <div class="mb-3">
+            <label for="email" class="form-label">Email</label>
+            <input type="email" class="form-control" id="email" name="email" th:value="${contact.email}" required>
+        </div>
+        <div class="mb-3">
+            <label for="phoneNumber" class="form-label">Phone Number</label>
+            <input type="text" class="form-control" id="phoneNumber" name="phoneNumber" th:value="${contact.phoneNumber}" required>
+        </div>
+        <div class="mb-3">
+            <label for="company" class="form-label">Company</label>
+            <input type="text" class="form-control" id="company" name="company" th:value="${contact.company}">
+        </div>
+        <div class="mb-3">
+            <label for="jobTitle" class="form-label">Job Title</label>
+            <input type="text" class="form-control" id="jobTitle" name="jobTitle" th:value="${contact.jobTitle}">
+        </div>
+        <button type="submit" class="btn btn-warning">Update Contact</button>
+        <a href="/contacts" class="btn btn-secondary ms-3">Cancel</a>
+    </form>
+</div>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
