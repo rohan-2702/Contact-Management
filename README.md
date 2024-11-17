@@ -80,6 +80,7 @@ A simple, user-friendly **Contact Management System** built with **Spring Boot**
 4. **Build and Run the Project**
   - Use Maven to build and run the application:
     ```bash
+     mvn clean install
      mvn spring-boot:run
     ```
 5.  **Access the Application**
