@@ -51,7 +51,7 @@ A simple, user-friendly **Contact Management System** built with **Spring Boot**
 
 1. **Clone the Repository**  
    ```bash
-   git clone https://github.com/yourusername/ContactManagement.git
+   git clone https://github.com/rohan-2702/Contact-Management.git
    cd ContactManagement
    ```
 2. **Set Up the Database**  
