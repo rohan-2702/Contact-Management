@@ -16,8 +16,8 @@ A simple, user-friendly **Contact Management System** built with **Spring Boot**
 
 ## 🛠️ Tech Stack
 
-- **Backend**: Spring Boot, Hibernate
-- **Frontend**: Thymeleaf, Bootstrap
+- **Backend**: Java, Spring Boot, Hibernate
+- **Frontend**: Thymeleaf, Bootstrap, HTML, CSS
 - **Database**: PostgreSQL
 - **Build Tool**: Maven
 
